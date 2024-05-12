@@ -14,7 +14,7 @@ function showRandomImageAtStart() {
     const thumbnailLinks = document.querySelectorAll("#thumbnails .card-link");
 
     // Step 2: Select a random entry out of these 6.
-    const randomIndex = Math.floor(Math.random() * thumbnailLinks.length);
+    const randomIndex = getRandomInt(0, thumbnailLinks.length)
     const randomLink = thumbnailLinks[randomIndex];
 
     // Step 3: Call switchFullImage() with the URL of the random image and the alt attribute of the thumbnail.
